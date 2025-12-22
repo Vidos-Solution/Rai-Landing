@@ -1,0 +1,524 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #05070b;
+  --foreground: #ffffff;
+}
+
+/* Dark mode (default) - keep everything as is */
+[data-theme="dark"] {
+  --background: #05070b;
+  --foreground: #ffffff;
+}
+
+/* Light mode - new theme */
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  /* Removed perspective to prevent fixed positioning issues */
+}
+
+/* Ensure navbar is not affected by body perspective or transforms */
+nav {
+  transform: translateZ(0) !important;
+  perspective: none !important;
+  transform-style: flat !important;
+  isolation: isolate !important;
+}
+
+/* 3D Container Styles */
+.scene-3d {
+  perspective: 2000px;
+  perspective-origin: center center;
+  transform-style: preserve-3d;
+}
+
+/* Ensure navbar is not affected by scene-3d perspective */
+nav {
+  perspective: none !important;
+  transform-style: flat !important;
+}
+
+/* Privacy Policy Page - Light background in light theme (dark unchanged) */
+[data-theme="light"] .privacy-page {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%) !important;
+}
+
+/* Terms Page - Light background in light theme (dark unchanged) */
+[data-theme="light"] .terms-page {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%) !important;
+}
+
+/* Cookies Page - Light background in light theme (dark unchanged) */
+[data-theme="light"] .cookies-page {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%) !important;
+}
+
+/* 404 Not Found Page - Light background in light theme (dark unchanged) */
+[data-theme="light"] .not-found-page {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%) !important;
+}
+
+.element-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+/* 3D Card with depth */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+.card-3d::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.card-3d:hover::before {
+  opacity: 1;
+}
+
+/* Parallax scroll effect */
+.parallax-scroll {
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+/* 3D tilt effect */
+.tilt-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(26, 40, 53, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Light mode glass */
+[data-theme="light"] .glass {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient Backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #05070b 0%, #0b1620 50%, #1a2835 100%);
+}
+
+/* Light mode gradient backgrounds */
+[data-theme="light"] .gradient-bg {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #91B7AC 0%, #6D889D 50%, #6EA2DC 100%);
+}
+
+/* Glow Effects */
+.glow-primary {
+  box-shadow: 0 0 30px rgba(145, 183, 172, 0.3);
+}
+
+.glow-accent {
+  box-shadow: 0 0 40px rgba(110, 162, 220, 0.4);
+}
+
+/* Parallax Layers */
+.parallax-layer {
+  will-change: transform;
+}
+
+/* Smooth Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Light mode text color utilities */
+[data-theme="light"] .text-light-gray200 {
+  color: #374151;
+}
+
+[data-theme="light"] .text-light-gray600 {
+  color: #6b7280;
+}
+
+[data-theme="light"] .text-white {
+  color: #111827;
+}
+
+/* Exception: Keep white text in Framework section circle badge */
+[data-theme="light"] #framework .text-white {
+  color: #ffffff !important;
+}
+
+/* Navbar - Ensure it's always fixed and visible */
+nav,
+body > div > nav,
+body nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translateZ(0) !important;
+  will-change: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Light mode navbar background */
+[data-theme="light"] nav {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] nav[class*="bg-gradient"] {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)) !important;
+}
+
+/* Light mode navbar links - green on hover and when active */
+[data-theme="light"] nav a.nav-link:hover {
+  color: #10b981 !important; /* Green color */
+}
+
+/* Active/selected navbar link - green in light theme */
+[data-theme="light"] nav a.nav-link.bg-white\/10,
+[data-theme="light"] nav a[class*="bg-white/10"] {
+  color: #10b981 !important; /* Green color for active state */
+}
+
+[data-theme="light"] nav a.nav-link.bg-white\/10:hover {
+  color: #10b981 !important; /* Stay green on hover when active */
+}
+
+/* Light mode background overlays */
+[data-theme="light"] .bg-dark-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .bg-dark-medium {
+  background-color: #f3f4f6;
+}
+
+/* Hero Section - Keep unchanged in light mode */
+[data-theme="light"] #home {
+  /* Force dark background */
+  background: linear-gradient(135deg, #05070b 0%, #0b1620 50%, #1a2835 100%) !important;
+}
+
+[data-theme="light"] #home * {
+  /* Prevent any light mode text color changes */
+}
+
+[data-theme="light"] #home .text-light-gray200 {
+  color: #e5e7eb !important;
+}
+
+[data-theme="light"] #home .text-light-gray600 {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] #home .text-white {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] #home h1,
+[data-theme="light"] #home h2,
+[data-theme="light"] #home h3,
+[data-theme="light"] #home h4,
+[data-theme="light"] #home h5,
+[data-theme="light"] #home h6 {
+  color: inherit !important;
+}
+
+/* Protect gradient text in hero */
+[data-theme="light"] #home h1.bg-clip-text {
+  background: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+[data-theme="light"] #home .glass {
+  background: rgba(26, 40, 53, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="light"] #home .bg-dark-overlay {
+  background-color: rgba(2, 6, 10, 0.8) !important;
+}
+
+[data-theme="light"] #home .bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, rgba(2, 6, 10, 0.8), rgba(2, 6, 10, 0.7), rgba(2, 6, 10, 0.8)) !important;
+}
+
+[data-theme="light"] #home .border-light-gray600 {
+  border-color: #9ca3af !important;
+}
+
+[data-theme="light"] #home .bg-light-gray600 {
+  background-color: #9ca3af !important;
+}
+
+/* RICS Card - Dark card in light theme only */
+[data-theme="light"] .rics-card {
+  background: rgba(26, 40, 53, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(145, 183, 172, 0.3) !important;
+}
+
+[data-theme="light"] .rics-card .text-white {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .rics-card .text-light-gray200 {
+  color: #e5e7eb !important;
+}
+
+[data-theme="light"] .rics-card .text-light-gray600 {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] .rics-card .bg-dark-medium {
+  background-color: rgba(26, 40, 53, 0.5) !important;
+}
+
+/* Standards Cards - Dark cards in light theme only */
+[data-theme="light"] .standards-card {
+  background: rgba(26, 40, 53, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="light"] .standards-card .text-white {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .standards-card .text-light-gray200 {
+  color: #e5e7eb !important;
+}
+
+[data-theme="light"] .standards-card .text-light-gray600 {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] .standards-card .bg-dark-medium {
+  background-color: rgba(26, 40, 53, 0.5) !important;
+}
+
+/* Practice Section - Keep unchanged in light mode (same as dark) */
+[data-theme="light"] #practice {
+  /* Force dark background gradient */
+  background: linear-gradient(to bottom, #1a2835 0%, #0f1b26 50%, #06090e 100%) !important;
+}
+
+[data-theme="light"] #practice .text-light-gray200 {
+  color: #e5e7eb !important;
+}
+
+[data-theme="light"] #practice .text-light-gray600 {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] #practice .text-white {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] #practice h1,
+[data-theme="light"] #practice h2,
+[data-theme="light"] #practice h3,
+[data-theme="light"] #practice h4,
+[data-theme="light"] #practice h5,
+[data-theme="light"] #practice h6 {
+  color: inherit !important;
+}
+
+[data-theme="light"] #practice .glass {
+  background: rgba(26, 40, 53, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="light"] #practice .bg-dark-overlay {
+  background-color: rgba(2, 6, 10, 0.8) !important;
+}
+
+[data-theme="light"] #practice .bg-dark-medium {
+  background-color: rgba(26, 40, 53, 0.5) !important;
+}
+
+/* Protect gradient text in practice section */
+[data-theme="light"] #practice h2.bg-clip-text,
+[data-theme="light"] #practice .bg-clip-text {
+  background: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Framework Section - Light background in light theme */
+[data-theme="light"] #framework {
+  background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%) !important;
+}
+
+/* Unified Section - Light background in light theme (dark unchanged) */
+[data-theme="light"] #unified {
+  background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%) !important;
+}
+
+/* Unified Section - Only Key Benefits connection text white in light theme (not For Professionals/Businesses) */
+[data-theme="light"] #unified .glass .bg-dark-medium p.text-light-gray200 {
+  color: #ffffff !important;
+}
+
+/* Social Proof Section - Keep unchanged in light mode (same as dark) */
+[data-theme="light"] #social-proof {
+  /* Force dark background gradient */
+  background: linear-gradient(to bottom, #1a2835 0%, #0f1b26 50%, #06090e 100%) !important;
+}
+
+[data-theme="light"] #social-proof .text-light-gray200 {
+  color: #e5e7eb !important;
+}
+
+[data-theme="light"] #social-proof .text-light-gray600 {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] #social-proof .text-white {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] #social-proof h1,
+[data-theme="light"] #social-proof h2,
+[data-theme="light"] #social-proof h3,
+[data-theme="light"] #social-proof h4,
+[data-theme="light"] #social-proof h5,
+[data-theme="light"] #social-proof h6 {
+  color: inherit !important;
+}
+
+[data-theme="light"] #social-proof .glass {
+  background: rgba(26, 40, 53, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="light"] #social-proof .bg-dark-overlay {
+  background-color: rgba(2, 6, 10, 0.8) !important;
+}
+
+[data-theme="light"] #social-proof .bg-dark-medium {
+  background-color: rgba(26, 40, 53, 0.5) !important;
+}
+
+/* Protect gradient text in social proof section */
+[data-theme="light"] #social-proof h2.bg-clip-text,
+[data-theme="light"] #social-proof .bg-clip-text {
+  background: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* CTA Section - Light background in light theme (dark unchanged) */
+[data-theme="light"] #cta {
+  background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%) !important;
+}
+
+/* Footer - Keep unchanged in light mode (same as dark) */
+[data-theme="light"] footer {
+  /* Keep dark background image and overlay */
+}
+
+[data-theme="light"] footer .text-light-gray200 {
+  color: #e5e7eb !important;
+}
+
+[data-theme="light"] footer .text-light-gray600 {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] footer .text-white {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] footer h1,
+[data-theme="light"] footer h2,
+[data-theme="light"] footer h3,
+[data-theme="light"] footer h4,
+[data-theme="light"] footer h5,
+[data-theme="light"] footer h6 {
+  color: inherit !important;
+}
+
+[data-theme="light"] footer .bg-dark-overlay {
+  background-color: rgba(2, 6, 10, 0.95) !important;
+}
+
+[data-theme="light"] footer .bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, rgba(2, 6, 10, 0.95), rgba(2, 6, 10, 0.9), rgba(2, 6, 10, 0.95)) !important;
+}
+
+[data-theme="light"] footer .border-white {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
