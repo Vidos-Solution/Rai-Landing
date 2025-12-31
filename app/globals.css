@@ -79,6 +79,823 @@ nav {
   background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%) !important;
 }
 
+/* Problem Section - Light background in light theme (dark unchanged) */
+[data-theme="light"] #problem {
+  background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%) !important;
+}
+[data-theme="light"] #problem .text-white {
+  color: #111827 !important;
+}
+[data-theme="light"] #problem .text-light-gray200 {
+  color: #374151 !important;
+}
+[data-theme="light"] #problem .text-light-gray600 {
+  color: #6b7280 !important;
+}
+[data-theme="light"] #problem .text-primary {
+  color: #059669 !important;
+}
+[data-theme="light"] #problem .text-accent {
+  color: #2563eb !important;
+}
+/* Keep "The Problem" heading dark in light mode */
+[data-theme="light"] #problem h2.bg-gradient-to-r.from-primary.via-secondary.to-accent.bg-clip-text.text-transparent {
+  background: linear-gradient(to right, #111827, #374151, #111827) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+/* Keep "It's unmanaged AI" text dark in light mode */
+[data-theme="light"] #problem p.bg-gradient-to-r.from-accent.to-primary.bg-clip-text.text-transparent {
+  background: linear-gradient(to right, #111827, #374151) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+/* Keep "The risk isn't AI." text dark in light mode */
+[data-theme="light"] #problem p.text-white.mb-2 {
+  color: #111827 !important;
+}
+
+/* Unified Concept Section - Light background in light theme (dark unchanged) */
+[data-theme="light"] #unified-concept {
+  background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%) !important;
+}
+[data-theme="light"] #unified-concept .text-white {
+  color: #111827 !important;
+}
+[data-theme="light"] #unified-concept .text-light-gray200 {
+  color: #374151 !important;
+}
+[data-theme="light"] #unified-concept .text-light-gray600 {
+  color: #6b7280 !important;
+}
+[data-theme="light"] #unified-concept .text-primary {
+  color: #059669 !important;
+}
+[data-theme="light"] #unified-concept .text-secondary {
+  color: #0891b2 !important;
+}
+[data-theme="light"] #unified-concept .text-accent {
+  color: #2563eb !important;
+}
+[data-theme="light"] #unified-concept .glass {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-r {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #unified-concept .bg-dark-medium\/50 {
+  background-color: rgba(243, 244, 246, 0.7) !important;
+}
+[data-theme="light"] #unified-concept .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+[data-theme="light"] #unified-concept .border-primary\/20 {
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+[data-theme="light"] #unified-concept .border-primary\/30 {
+  border-color: rgba(5, 150, 105, 0.3) !important;
+}
+[data-theme="light"] #unified-concept .border-primary\/40 {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #unified-concept .bg-primary\/10 {
+  background-color: rgba(5, 150, 105, 0.1) !important;
+}
+[data-theme="light"] #unified-concept .bg-accent\/10 {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+}
+[data-theme="light"] #unified-concept .bg-secondary\/10 {
+  background-color: rgba(8, 145, 178, 0.1) !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-r.from-primary\/10.to-accent\/10 {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-r.from-primary\/20.to-accent\/20 {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.2), rgba(37, 99, 235, 0.2)) !important;
+}
+[data-theme="light"] #unified-concept .border-primary\/20 {
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+[data-theme="light"] #unified-concept .border-primary\/40 {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #unified-concept .hover\:border-primary\/40:hover {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #unified-concept .hover\:text-accent:hover {
+  color: #2563eb !important;
+}
+[data-theme="light"] #unified-concept .hover\:text-primary:hover {
+  color: #059669 !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1)) !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-br.from-primary.to-secondary {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.15), rgba(8, 145, 178, 0.15)) !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-br.from-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(8, 145, 178, 0.15), rgba(37, 99, 235, 0.15)) !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-br.from-accent.to-primary {
+  background-image: linear-gradient(to bottom right, rgba(37, 99, 235, 0.15), rgba(5, 150, 105, 0.15)) !important;
+}
+[data-theme="light"] #unified-concept .bg-gradient-to-br.from-primary.via-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.15), rgba(8, 145, 178, 0.15), rgba(37, 99, 235, 0.15)) !important;
+}
+[data-theme="light"] #unified-concept .bg-clip-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #unified-concept .bg-clip-text.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #059669, #0891b2, #2563eb) !important;
+}
+
+/* Indicative Impact Section - Light background in light theme (dark unchanged) */
+[data-theme="light"] #indicative-impact {
+  background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%) !important;
+}
+[data-theme="light"] #indicative-impact .text-white {
+  color: #111827 !important;
+}
+[data-theme="light"] #indicative-impact .text-light-gray200 {
+  color: #374151 !important;
+}
+[data-theme="light"] #indicative-impact .text-light-gray600 {
+  color: #6b7280 !important;
+}
+[data-theme="light"] #indicative-impact .text-primary {
+  color: #059669 !important;
+}
+[data-theme="light"] #indicative-impact .text-secondary {
+  color: #0891b2 !important;
+}
+[data-theme="light"] #indicative-impact .text-accent {
+  color: #2563eb !important;
+}
+[data-theme="light"] #indicative-impact .glass {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+[data-theme="light"] #indicative-impact .bg-gradient-to-r {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #indicative-impact .bg-dark-medium\/50 {
+  background-color: rgba(243, 244, 246, 0.7) !important;
+}
+[data-theme="light"] #indicative-impact .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+[data-theme="light"] #indicative-impact .border-primary\/20 {
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+[data-theme="light"] #indicative-impact .border-primary\/30 {
+  border-color: rgba(5, 150, 105, 0.3) !important;
+}
+[data-theme="light"] #indicative-impact .border-primary\/40 {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #indicative-impact .bg-primary\/10 {
+  background-color: rgba(5, 150, 105, 0.1) !important;
+}
+[data-theme="light"] #indicative-impact .bg-accent\/10 {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+}
+[data-theme="light"] #indicative-impact .bg-secondary\/10 {
+  background-color: rgba(8, 145, 178, 0.1) !important;
+}
+[data-theme="light"] #indicative-impact .bg-gradient-to-r.from-primary\/10.to-accent\/10 {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #indicative-impact .bg-gradient-to-r.from-primary\/20.to-accent\/20 {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.2), rgba(37, 99, 235, 0.2)) !important;
+}
+[data-theme="light"] #indicative-impact .border-primary\/20 {
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+[data-theme="light"] #indicative-impact .border-primary\/40 {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #indicative-impact .hover\:border-primary\/40:hover {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #indicative-impact .hover\:text-accent:hover {
+  color: #2563eb !important;
+}
+[data-theme="light"] #indicative-impact .hover\:text-primary:hover {
+  color: #059669 !important;
+}
+[data-theme="light"] #indicative-impact .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1)) !important;
+}
+[data-theme="light"] #indicative-impact .bg-gradient-to-br.from-primary.to-secondary {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.15), rgba(8, 145, 178, 0.15)) !important;
+}
+[data-theme="light"] #indicative-impact .bg-gradient-to-br.from-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(8, 145, 178, 0.15), rgba(37, 99, 235, 0.15)) !important;
+}
+[data-theme="light"] #indicative-impact .bg-gradient-to-br.from-accent.to-primary {
+  background-image: linear-gradient(to bottom right, rgba(37, 99, 235, 0.15), rgba(5, 150, 105, 0.15)) !important;
+}
+[data-theme="light"] #indicative-impact .bg-clip-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #indicative-impact .bg-clip-text.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #059669, #0891b2, #2563eb) !important;
+}
+[data-theme="light"] #indicative-impact h2.bg-clip-text {
+  background: linear-gradient(to right, #059669, #0891b2, #2563eb) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Two Clear Pathways Section - Light background in light theme, but cards stay dark */
+[data-theme="light"] #two-pathways {
+  background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%) !important;
+}
+/* Section header text - dark in light theme */
+[data-theme="light"] #two-pathways > div > div > div.text-center .text-light-gray200 {
+  color: #374151 !important;
+}
+[data-theme="light"] #two-pathways > div > div > div.text-center .text-primary {
+  color: #059669 !important;
+}
+[data-theme="light"] #two-pathways > div > div > div.text-center .text-accent {
+  color: #2563eb !important;
+}
+/* Keep cards dark in light theme */
+[data-theme="light"] #two-pathways .glass {
+  background: rgba(26, 40, 53, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="light"] #two-pathways .glass .text-white {
+  color: #ffffff !important;
+}
+[data-theme="light"] #two-pathways .glass .text-light-gray200 {
+  color: #e5e7eb !important;
+}
+[data-theme="light"] #two-pathways .glass .text-light-gray600 {
+  color: #9ca3af !important;
+}
+[data-theme="light"] #two-pathways .glass .text-primary {
+  color: #91B7AC !important;
+}
+[data-theme="light"] #two-pathways .glass .text-accent {
+  color: #6EA2DC !important;
+}
+[data-theme="light"] #two-pathways .glass .text-secondary {
+  color: #6D889D !important;
+}
+[data-theme="light"] #two-pathways .glass .bg-dark-medium\/50 {
+  background-color: rgba(26, 40, 53, 0.5) !important;
+}
+[data-theme="light"] #two-pathways .glass .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="light"] #two-pathways .glass .border-primary\/20 {
+  border-color: rgba(145, 183, 172, 0.2) !important;
+}
+[data-theme="light"] #two-pathways .glass .border-primary\/30 {
+  border-color: rgba(145, 183, 172, 0.3) !important;
+}
+[data-theme="light"] #two-pathways .glass .border-primary\/40 {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #two-pathways .glass .border-accent\/20 {
+  border-color: rgba(110, 162, 220, 0.2) !important;
+}
+[data-theme="light"] #two-pathways .glass .border-accent\/30 {
+  border-color: rgba(110, 162, 220, 0.3) !important;
+}
+[data-theme="light"] #two-pathways .glass .border-accent\/40 {
+  border-color: rgba(110, 162, 220, 0.4) !important;
+}
+[data-theme="light"] #two-pathways .glass .bg-primary\/10 {
+  background-color: rgba(145, 183, 172, 0.1) !important;
+}
+[data-theme="light"] #two-pathways .glass .bg-accent\/10 {
+  background-color: rgba(110, 162, 220, 0.1) !important;
+}
+[data-theme="light"] #two-pathways .glass .bg-secondary\/10 {
+  background-color: rgba(109, 136, 157, 0.1) !important;
+}
+[data-theme="light"] #two-pathways .glass .bg-gradient-to-r.from-primary\/10.to-secondary\/10 {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.1), rgba(109, 136, 157, 0.1)) !important;
+}
+[data-theme="light"] #two-pathways .glass .bg-gradient-to-r.from-accent\/10.to-secondary\/10 {
+  background-image: linear-gradient(to right, rgba(110, 162, 220, 0.1), rgba(109, 136, 157, 0.1)) !important;
+}
+[data-theme="light"] #two-pathways .glass .hover\:border-primary\/40:hover {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #two-pathways .glass .hover\:border-accent\/40:hover {
+  border-color: rgba(110, 162, 220, 0.4) !important;
+}
+[data-theme="light"] #two-pathways .glass .hover\:text-primary:hover {
+  color: #91B7AC !important;
+}
+[data-theme="light"] #two-pathways .glass .hover\:text-accent:hover {
+  color: #6EA2DC !important;
+}
+[data-theme="light"] #two-pathways .bg-gradient-to-r {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #two-pathways .border-primary\/20:not(.glass *) {
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+[data-theme="light"] #two-pathways .border-primary\/30:not(.glass *) {
+  border-color: rgba(5, 150, 105, 0.3) !important;
+}
+[data-theme="light"] #two-pathways .bg-primary\/10:not(.glass *) {
+  background-color: rgba(5, 150, 105, 0.1) !important;
+}
+[data-theme="light"] #two-pathways .bg-accent\/10:not(.glass *) {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+}
+[data-theme="light"] #two-pathways .bg-gradient-to-r.from-primary\/10.to-accent\/10:not(.glass *) {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #two-pathways .bg-clip-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #two-pathways .bg-clip-text.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #059669, #0891b2, #2563eb) !important;
+}
+[data-theme="light"] #two-pathways h2.bg-clip-text {
+  background: linear-gradient(to right, #059669, #0891b2, #2563eb) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* How the Pieces Fit Together Section - Keep unchanged in light mode (same as dark) */
+[data-theme="light"] #how-it-fits {
+  background: linear-gradient(to bottom, #1a2835 0%, #0f1b26 50%, #06090e 100%) !important;
+}
+[data-theme="light"] #how-it-fits .text-white,
+[data-theme="light"] #how-it-fits span.text-white,
+[data-theme="light"] #how-it-fits p.text-white,
+[data-theme="light"] #how-it-fits div.text-white,
+[data-theme="light"] #how-it-fits h2.text-white,
+[data-theme="light"] #how-it-fits h3.text-white {
+  color: #ffffff !important;
+}
+[data-theme="light"] #how-it-fits .text-light-gray200,
+[data-theme="light"] #how-it-fits span.text-light-gray200,
+[data-theme="light"] #how-it-fits p.text-light-gray200,
+[data-theme="light"] #how-it-fits div.text-light-gray200 {
+  color: #e5e7eb !important;
+}
+[data-theme="light"] #how-it-fits .text-light-gray600,
+[data-theme="light"] #how-it-fits span.text-light-gray600,
+[data-theme="light"] #how-it-fits p.text-light-gray600,
+[data-theme="light"] #how-it-fits div.text-light-gray600 {
+  color: #9ca3af !important;
+}
+[data-theme="light"] #how-it-fits .text-primary,
+[data-theme="light"] #how-it-fits span.text-primary,
+[data-theme="light"] #how-it-fits p.text-primary,
+[data-theme="light"] #how-it-fits div.text-primary,
+[data-theme="light"] #how-it-fits svg.text-primary {
+  color: #91B7AC !important;
+}
+[data-theme="light"] #how-it-fits .text-secondary {
+  color: #6D889D !important;
+}
+[data-theme="light"] #how-it-fits .text-accent {
+  color: #6EA2DC !important;
+}
+[data-theme="light"] #how-it-fits .glass {
+  background: rgba(26, 40, 53, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="light"] #how-it-fits .bg-dark-overlay\/90 {
+  background-color: rgba(2, 6, 10, 0.9) !important;
+}
+[data-theme="light"] #how-it-fits .bg-dark-medium\/50 {
+  background-color: rgba(26, 40, 53, 0.7) !important;
+}
+[data-theme="light"] #how-it-fits .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="light"] #how-it-fits .border-primary\/20 {
+  border-color: rgba(145, 183, 172, 0.2) !important;
+}
+[data-theme="light"] #how-it-fits .border-primary\/30 {
+  border-color: rgba(145, 183, 172, 0.3) !important;
+}
+[data-theme="light"] #how-it-fits .border-primary\/40 {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #how-it-fits .border-accent\/20 {
+  border-color: rgba(110, 162, 220, 0.2) !important;
+}
+[data-theme="light"] #how-it-fits .border-accent\/30 {
+  border-color: rgba(110, 162, 220, 0.3) !important;
+}
+[data-theme="light"] #how-it-fits .bg-primary\/10 {
+  background-color: rgba(145, 183, 172, 0.1) !important;
+}
+[data-theme="light"] #how-it-fits .bg-accent\/10 {
+  background-color: rgba(110, 162, 220, 0.1) !important;
+}
+[data-theme="light"] #how-it-fits .bg-secondary\/10 {
+  background-color: rgba(109, 136, 157, 0.1) !important;
+}
+[data-theme="light"] #how-it-fits .bg-gradient-to-r {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.1), rgba(109, 136, 157, 0.1), rgba(110, 162, 220, 0.1)) !important;
+}
+[data-theme="light"] #how-it-fits .bg-gradient-to-r.from-primary\/10.to-accent\/10 {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.1), rgba(110, 162, 220, 0.1)) !important;
+}
+[data-theme="light"] #how-it-fits .bg-gradient-to-r.from-primary\/20.to-accent\/20 {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.2), rgba(110, 162, 220, 0.2)) !important;
+}
+[data-theme="light"] #how-it-fits .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, rgba(145, 183, 172, 0.1), rgba(109, 136, 157, 0.1)) !important;
+}
+[data-theme="light"] #how-it-fits .bg-gradient-to-br.from-primary.to-secondary {
+  background-image: linear-gradient(to bottom right, rgba(145, 183, 172, 0.15), rgba(109, 136, 157, 0.15)) !important;
+}
+[data-theme="light"] #how-it-fits .bg-gradient-to-br.from-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(109, 136, 157, 0.15), rgba(110, 162, 220, 0.15)) !important;
+}
+[data-theme="light"] #how-it-fits .bg-gradient-to-br.from-accent.to-primary {
+  background-image: linear-gradient(to bottom right, rgba(110, 162, 220, 0.15), rgba(145, 183, 172, 0.15)) !important;
+}
+[data-theme="light"] #how-it-fits .bg-clip-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #how-it-fits .bg-clip-text.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+}
+[data-theme="light"] #how-it-fits h2.bg-clip-text,
+[data-theme="light"] #how-it-fits h3.bg-clip-text {
+  background: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #how-it-fits .hover\:border-primary\/40:hover {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #how-it-fits .hover\:text-accent:hover {
+  color: #6EA2DC !important;
+}
+[data-theme="light"] #how-it-fits .hover\:text-primary:hover {
+  color: #91B7AC !important;
+}
+
+/* CAIG Method Section - Keep unchanged in light mode (copy dark to light) */
+[data-theme="light"] #caig-method {
+  background: linear-gradient(to bottom, #06090e 0%, #0f1b26 50%, #1a2835 100%) !important;
+}
+[data-theme="light"] #caig-method * {
+  /* Prevent any light mode text color changes */
+}
+[data-theme="light"] #caig-method .text-white,
+[data-theme="light"] #caig-method span.text-white,
+[data-theme="light"] #caig-method p.text-white,
+[data-theme="light"] #caig-method div.text-white,
+[data-theme="light"] #caig-method h2.text-white,
+[data-theme="light"] #caig-method h3.text-white {
+  color: #ffffff !important;
+}
+[data-theme="light"] #caig-method .text-light-gray200,
+[data-theme="light"] #caig-method span.text-light-gray200,
+[data-theme="light"] #caig-method p.text-light-gray200,
+[data-theme="light"] #caig-method div.text-light-gray200 {
+  color: #e5e7eb !important;
+}
+[data-theme="light"] #caig-method .text-light-gray600,
+[data-theme="light"] #caig-method span.text-light-gray600,
+[data-theme="light"] #caig-method p.text-light-gray600,
+[data-theme="light"] #caig-method div.text-light-gray600 {
+  color: #9ca3af !important;
+}
+[data-theme="light"] #caig-method .text-primary,
+[data-theme="light"] #caig-method span.text-primary,
+[data-theme="light"] #caig-method p.text-primary,
+[data-theme="light"] #caig-method div.text-primary,
+[data-theme="light"] #caig-method svg.text-primary {
+  color: #91B7AC !important;
+}
+[data-theme="light"] #caig-method .text-secondary {
+  color: #6D889D !important;
+}
+[data-theme="light"] #caig-method .text-accent {
+  color: #6EA2DC !important;
+}
+[data-theme="light"] #caig-method .glass {
+  background: rgba(26, 40, 53, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="light"] #caig-method .bg-dark-medium\/50 {
+  background-color: rgba(26, 40, 53, 0.7) !important;
+}
+[data-theme="light"] #caig-method .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="light"] #caig-method .border-primary\/20 {
+  border-color: rgba(145, 183, 172, 0.2) !important;
+}
+[data-theme="light"] #caig-method .border-primary\/30 {
+  border-color: rgba(145, 183, 172, 0.3) !important;
+}
+[data-theme="light"] #caig-method .border-primary\/40 {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #caig-method .border-accent\/30 {
+  border-color: rgba(110, 162, 220, 0.3) !important;
+}
+[data-theme="light"] #caig-method .border-2.border-accent\/30 {
+  border-color: rgba(110, 162, 220, 0.3) !important;
+}
+[data-theme="light"] #caig-method .border-4.border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="light"] #caig-method .bg-primary\/10 {
+  background-color: rgba(145, 183, 172, 0.1) !important;
+}
+[data-theme="light"] #caig-method .bg-accent\/10 {
+  background-color: rgba(110, 162, 220, 0.1) !important;
+}
+[data-theme="light"] #caig-method .bg-secondary\/10 {
+  background-color: rgba(109, 136, 157, 0.1) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-r.from-primary\/10.to-accent\/10 {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.1), rgba(110, 162, 220, 0.1)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-r.from-primary\/20.to-accent\/20 {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.2), rgba(110, 162, 220, 0.2)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, rgba(145, 183, 172, 0.1), rgba(109, 136, 157, 0.1)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.from-primary.to-secondary {
+  background-image: linear-gradient(to bottom right, rgba(145, 183, 172, 0.15), rgba(109, 136, 157, 0.15)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.from-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(109, 136, 157, 0.15), rgba(110, 162, 220, 0.15)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.from-accent.to-primary {
+  background-image: linear-gradient(to bottom right, rgba(110, 162, 220, 0.15), rgba(145, 183, 172, 0.15)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.from-primary.via-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(145, 183, 172, 0.15), rgba(109, 136, 157, 0.15), rgba(110, 162, 220, 0.15)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.from-accent.via-primary.to-secondary {
+  background-image: linear-gradient(to bottom right, rgba(110, 162, 220, 0.15), rgba(145, 183, 172, 0.15), rgba(109, 136, 157, 0.15)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-r.from-primary.via-secondary.to-accent {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.1), rgba(109, 136, 157, 0.1), rgba(110, 162, 220, 0.1)) !important;
+}
+[data-theme="light"] #caig-method .bg-clip-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #caig-method .bg-clip-text.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+}
+/* Protect "The CAIG Method™" heading - ensure it stays exactly as in dark mode */
+[data-theme="light"] #caig-method h2.bg-clip-text,
+[data-theme="light"] #caig-method h2.bg-gradient-to-r,
+[data-theme="light"] #caig-method h2.text-transparent,
+[data-theme="light"] #caig-method h2,
+[data-theme="light"] #caig-method h2.bg-gradient-to-r.from-primary.via-secondary.to-accent.bg-clip-text.text-transparent {
+  background: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+  background-image: linear-gradient(to right, #91B7AC, #6D889D, #6EA2DC) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #caig-method .hover\:border-primary\/40:hover {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #caig-method .hover\:border-primary\/60:hover {
+  border-color: rgba(145, 183, 172, 0.6) !important;
+}
+[data-theme="light"] #caig-method .hover\:text-accent:hover {
+  color: #6EA2DC !important;
+}
+[data-theme="light"] #caig-method .hover\:text-primary:hover {
+  color: #91B7AC !important;
+}
+[data-theme="light"] #caig-method .bg-dark-overlay\/90 {
+  background-color: rgba(2, 6, 10, 0.9) !important;
+}
+[data-theme="light"] #caig-method .border-2.border-primary\/40 {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.from-primary\/30.to-accent\/30 {
+  background-image: linear-gradient(to bottom right, rgba(145, 183, 172, 0.3), rgba(110, 162, 220, 0.3)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.from-primary\/20.to-accent\/20 {
+  background-image: linear-gradient(to bottom right, rgba(145, 183, 172, 0.2), rgba(110, 162, 220, 0.2)) !important;
+}
+[data-theme="light"] #caig-method .bg-opacity-20 {
+  opacity: 0.2 !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.bg-opacity-20 {
+  opacity: 1 !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-br.bg-opacity-20 * {
+  opacity: 1 !important;
+}
+[data-theme="light"] #caig-method .border-primary\/20 {
+  border-color: rgba(145, 183, 172, 0.2) !important;
+}
+[data-theme="light"] #caig-method .border-accent\/20 {
+  border-color: rgba(110, 162, 220, 0.2) !important;
+}
+[data-theme="light"] #caig-method .border-2.border-primary\/20 {
+  border-color: rgba(145, 183, 172, 0.2) !important;
+}
+[data-theme="light"] #caig-method .border.border-accent\/20 {
+  border-color: rgba(110, 162, 220, 0.2) !important;
+}
+[data-theme="light"] #caig-method .bg-primary\/20 {
+  background-color: rgba(145, 183, 172, 0.2) !important;
+}
+[data-theme="light"] #caig-method .bg-accent\/20 {
+  background-color: rgba(110, 162, 220, 0.2) !important;
+}
+[data-theme="light"] #caig-method .bg-primary\/30 {
+  background-color: rgba(145, 183, 172, 0.3) !important;
+}
+[data-theme="light"] #caig-method .bg-accent\/30 {
+  background-color: rgba(110, 162, 220, 0.3) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-r.from-primary\/20.to-accent\/20 {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.2), rgba(110, 162, 220, 0.2)) !important;
+}
+[data-theme="light"] #caig-method .bg-gradient-to-r.from-primary\/10.to-accent\/10 {
+  background-image: linear-gradient(to right, rgba(145, 183, 172, 0.1), rgba(110, 162, 220, 0.1)) !important;
+}
+[data-theme="light"] #caig-method .group-hover\:text-accent:hover {
+  color: #6EA2DC !important;
+}
+[data-theme="light"] #caig-method .group-hover\:text-primary:hover {
+  color: #91B7AC !important;
+}
+[data-theme="light"] #caig-method .group-hover\:border-primary\/60:hover {
+  border-color: rgba(145, 183, 172, 0.6) !important;
+}
+[data-theme="light"] #caig-method .group-hover\:border-primary\/40:hover {
+  border-color: rgba(145, 183, 172, 0.4) !important;
+}
+[data-theme="light"] #caig-method .shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+[data-theme="light"] #caig-method .animate-spin {
+  animation: spin 1s linear infinite !important;
+}
+[data-theme="light"] #caig-method .animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}
+[data-theme="light"] #caig-method .backdrop-blur-sm {
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+[data-theme="light"] #caig-method .blur-xl {
+  filter: blur(24px) !important;
+}
+[data-theme="light"] #caig-method .blur-3xl {
+  filter: blur(64px) !important;
+}
+[data-theme="light"] #problem .glass {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-r {
+  background-image: linear-gradient(to right, #059669, #0891b2, #2563eb) !important;
+}
+[data-theme="light"] #problem .bg-dark-medium\/50 {
+  background-color: rgba(243, 244, 246, 0.7) !important;
+}
+[data-theme="light"] #problem .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+[data-theme="light"] #problem .border-primary\/20 {
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+[data-theme="light"] #problem .border-primary\/30 {
+  border-color: rgba(5, 150, 105, 0.3) !important;
+}
+[data-theme="light"] #problem .border-primary\/40 {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #problem .bg-primary\/10 {
+  background-color: rgba(5, 150, 105, 0.1) !important;
+}
+[data-theme="light"] #problem .bg-accent\/10 {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-r.from-primary\/10.to-accent\/10 {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-r.from-primary\/20.to-accent\/20 {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.2), rgba(37, 99, 235, 0.2)) !important;
+}
+[data-theme="light"] #problem .border-primary\/20 {
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+[data-theme="light"] #problem .border-primary\/40 {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #problem .hover\:border-primary\/40:hover {
+  border-color: rgba(5, 150, 105, 0.4) !important;
+}
+[data-theme="light"] #problem .hover\:text-accent:hover {
+  color: #2563eb !important;
+}
+[data-theme="light"] #problem .hover\:text-primary:hover {
+  color: #059669 !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-br.from-primary.to-secondary {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.15), rgba(8, 145, 178, 0.15)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-br.from-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(8, 145, 178, 0.15), rgba(37, 99, 235, 0.15)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-br.from-accent.to-primary {
+  background-image: linear-gradient(to bottom right, rgba(37, 99, 235, 0.15), rgba(5, 150, 105, 0.15)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-br.from-primary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.15), rgba(37, 99, 235, 0.15)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-br.from-accent.to-secondary {
+  background-image: linear-gradient(to bottom right, rgba(37, 99, 235, 0.15), rgba(8, 145, 178, 0.15)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-br.from-primary.via-secondary.to-accent {
+  background-image: linear-gradient(to bottom right, rgba(5, 150, 105, 0.15), rgba(8, 145, 178, 0.15), rgba(37, 99, 235, 0.15)) !important;
+}
+[data-theme="light"] #problem .border-accent\/30 {
+  border-color: rgba(37, 99, 235, 0.3) !important;
+}
+[data-theme="light"] #problem .border-2.border-accent\/30 {
+  border-color: rgba(37, 99, 235, 0.3) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-r.from-primary.to-accent {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-r.from-accent.to-primary {
+  background-image: linear-gradient(to right, rgba(37, 99, 235, 0.1), rgba(5, 150, 105, 0.1)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-r.from-primary.via-secondary.to-accent {
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1), rgba(37, 99, 235, 0.1)) !important;
+}
+[data-theme="light"] #problem .bg-gradient-to-r.from-accent.via-primary.to-secondary {
+  background-image: linear-gradient(to right, rgba(37, 99, 235, 0.1), rgba(5, 150, 105, 0.1), rgba(8, 145, 178, 0.1)) !important;
+}
+[data-theme="light"] #problem .bg-clip-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+[data-theme="light"] #problem .bg-clip-text.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #059669, #0891b2, #2563eb) !important;
+}
+
 .element-3d {
   transform-style: preserve-3d;
   transition: transform 0.1s ease-out;
@@ -188,6 +1005,33 @@ nav {
 
 [data-theme="light"] .text-white {
   color: #111827;
+}
+
+/* Exception: CAIG Method section - keep original dark colors (must override general rules) */
+[data-theme="light"] #caig-method .text-light-gray200,
+[data-theme="light"] #caig-method span.text-light-gray200,
+[data-theme="light"] #caig-method p.text-light-gray200,
+[data-theme="light"] #caig-method div.text-light-gray200,
+[data-theme="light"] #caig-method .text-light-gray200 * {
+  color: #e5e7eb !important;
+}
+
+[data-theme="light"] #caig-method .text-light-gray600,
+[data-theme="light"] #caig-method span.text-light-gray600,
+[data-theme="light"] #caig-method p.text-light-gray600,
+[data-theme="light"] #caig-method div.text-light-gray600,
+[data-theme="light"] #caig-method .text-light-gray600 * {
+  color: #9ca3af !important;
+}
+
+[data-theme="light"] #caig-method .text-white,
+[data-theme="light"] #caig-method span.text-white,
+[data-theme="light"] #caig-method p.text-white,
+[data-theme="light"] #caig-method div.text-white,
+[data-theme="light"] #caig-method h2.text-white,
+[data-theme="light"] #caig-method h3.text-white,
+[data-theme="light"] #caig-method .text-white * {
+  color: #ffffff !important;
 }
 
 /* Exception: Keep white text in Framework section circle badge */

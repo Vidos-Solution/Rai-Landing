@@ -73,11 +73,13 @@ export default function Hero() {
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 md:mb-3 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent leading-tight">
                   Vidos Responsible AI
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-light-gray200 mb-2 font-light">
-                  Practical Responsible AI for professional environments
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-light-gray200 mb-4 md:mb-6 font-light">
+                  From AI Awareness to Accountable AI Governance
                 </p>
-                <p className="text-xs sm:text-sm md:text-base text-light-gray600 max-w-2xl leading-relaxed">
-                  Vidos RAI helps professionals and organisations use AI responsibly, confidently, and in line with professional expectations — with clarity on what "good" looks like in practice.
+                <p className="text-sm sm:text-base md:text-lg text-light-gray200 max-w-2xl leading-relaxed mb-6 md:mb-8">
+                  AI is already shaping professional judgement.<br />
+                  Governance has not kept pace.<br />
+                  <span className="text-white font-medium">Vidos Responsible AI helps professionals and organisations govern how AI is used — responsibly, accountably, and with evidence.</span>
                 </p>
               </div>
 
@@ -101,9 +103,14 @@ export default function Hero() {
                     Build confidence and capability through structured learning and recognised certification.
                   </p>
                 </div>
-                <button className="w-full py-2.5 md:py-3 px-3 md:px-4 rounded-lg bg-gradient-to-r from-primary to-secondary text-white text-xs sm:text-sm md:text-base font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105 flex-shrink-0">
-                  Start Learning
-                </button>
+                <a 
+                  href="https://course.responsibleai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 md:py-3 px-3 md:px-4 rounded-lg bg-gradient-to-r from-primary to-secondary text-white text-xs sm:text-sm md:text-base font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105 flex-shrink-0 text-center block"
+                >
+                  👉 For Professionals
+                </a>
               </div>
             </div>
 
@@ -125,9 +132,14 @@ export default function Hero() {
                     Embed responsible AI with a practical governance framework, assurance, and ongoing support.
                   </p>
                 </div>
-                <button className="w-full py-2.5 md:py-3 px-3 md:px-4 rounded-lg bg-gradient-to-r from-accent to-secondary text-white text-xs sm:text-sm md:text-base font-semibold hover:shadow-lg hover:shadow-accent/50 transition-all duration-300 transform hover:scale-105 flex-shrink-0">
-                  Explore Toolkit
-                </button>
+                <a 
+                  href="https://vidos.responsibleai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 md:py-3 px-3 md:px-4 rounded-lg bg-gradient-to-r from-accent to-secondary text-white text-xs sm:text-sm md:text-base font-semibold hover:shadow-lg hover:shadow-accent/50 transition-all duration-300 transform hover:scale-105 flex-shrink-0 text-center block"
+                >
+                  👉 For Businesses
+                </a>
               </div>
             </div>
               </div>

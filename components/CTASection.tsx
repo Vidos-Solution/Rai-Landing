@@ -121,16 +121,17 @@ export default function CTASection() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16 fade-in-up">
-            <div className="inline-block mb-4">
-              <span className="px-4 py-2 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-primary font-semibold text-sm">
-                Get Started Today
-              </span>
-            </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Start your Responsible AI journey
+              Closing
             </h2>
-            <p className="text-lg md:text-xl text-light-gray200 max-w-2xl mx-auto">
-              Choose your pathway and begin implementing Responsible AI practices today.
+            <p className="text-lg md:text-xl text-light-gray200 max-w-3xl mx-auto leading-relaxed mb-6">
+              Responsible AI isn't about slowing innovation.
+            </p>
+            <p className="text-xl md:text-2xl font-semibold text-white max-w-3xl mx-auto mb-6">
+              It's about making it safe to scale.
+            </p>
+            <p className="text-lg md:text-xl text-light-gray200 max-w-3xl mx-auto leading-relaxed">
+              Choose your pathway to learn more, or contact us to discuss your governance context.
             </p>
           </div>
 
@@ -210,7 +211,7 @@ export default function CTASection() {
                   >
                     {/* Button 3D effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover/button:opacity-100 transition-opacity duration-300"></div>
-                    <span className="relative z-10">Start Learning →</span>
+                    <span className="relative z-10">👉 For Professionals</span>
                     
                     {/* Button shadow */}
                     <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg opacity-0 group-hover/button:opacity-50 transition-opacity duration-300 -z-10" style={{ transform: 'translateZ(-20px)' }}></div>
@@ -298,7 +299,7 @@ export default function CTASection() {
                   >
                     {/* Button 3D effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover/button:opacity-100 transition-opacity duration-300"></div>
-                    <span className="relative z-10">Explore Toolkit →</span>
+                    <span className="relative z-10">👉 For Businesses</span>
                     
                     {/* Button shadow */}
                     <div className="absolute inset-0 bg-gradient-to-r from-accent to-secondary blur-lg opacity-0 group-hover/button:opacity-50 transition-opacity duration-300 -z-10" style={{ transform: 'translateZ(-20px)' }}></div>
